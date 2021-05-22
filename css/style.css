@@ -1,0 +1,17 @@
+#intro {
+    background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
+    height: 100vh;
+    /* width: 100vw; */
+  }
+
+ .bg-cover{
+    height: 100vh;
+}
+
+.firstHalf{
+    margin: 15% 0px;
+}
+
+.sect-1{
+    max-width: 99vw;
+} 
