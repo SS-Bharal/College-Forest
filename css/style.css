@@ -12,6 +12,12 @@
     margin: 15% 0px;
 }
 
+@media(max-width:768px) {
+    .firstHalf {
+        margin-bottom: 300px;
+    }
+}
+
 .button {
     background-color: transparent;
     color: white;
