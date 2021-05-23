@@ -2,13 +2,13 @@
     background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
     height: 100vh;
     /* width: 100vw; */
-  }
+}
 
- .bg-cover{
+.bg-cover {
     height: 100vh;
 }
 
-.firstHalf{
+.firstHalf {
     margin: 15% 0px;
 }
 
@@ -24,30 +24,82 @@
     font-size: 16px;
     margin: 6px 4px;
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
-  }
-  .button1:hover {
-    box-shadow: 0 12px 16px 0 rgba(250, 247, 247, 0.24),0 17px 50px 0 rgba(158, 152, 152, 0.19);
+}
+
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(250, 247, 247, 0.24), 0 17px 50px 0 rgba(158, 152, 152, 0.19);
     background-color: white;
     color: black;
-  }
+}
 
-.sect-1{
+.sect-1 {
     max-width: 99vw;
-} 
+}
 
-.about-img{
+.about-img {
     width: 140px;
     height: 140px;
     border-radius: 70px;
 }
 
-.img-rounded{
+.img-rounded {
     width: 300px;
     height: 250px;
     border-radius: 10px;
 }
-.sec-mg{
+
+.sec-mg {
     margin: 5% 0px;
+}
+
+
+/* #Animation css  */
+
+.box {
+    /* background: url(img1/logo.jpg) no-repeat center; */
+    background-size: cover;
+    /* border: 2px solid red; */
+    position: relative;
+    width: 180px;
+    height: 180px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+.box img {
+    opacity: 0.5;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
+    }
+}
+
+.box span {
+    position: absolute;
+    /* border: 2px solid red; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateX(calc(var(--i)* 45deg)) translateZ(300px);
+}
+
+.box span img {
+    position: absolute;
+    /* border: 2px solid red; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
